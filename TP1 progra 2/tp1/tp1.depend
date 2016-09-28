@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1471740596 source:d:\proyectos c++\tp1\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	<locale>
+	<windows.h>
+	<iomanip>
+
+1471740013 source:d:\proyectos c++\tp1\funciones.cpp
+	"funciones.h"
+
+1471739960 d:\proyectos c++\tp1\funciones.h
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	<locale>
+	<windows.h>
+	<iomanip>
+
+1471738306 d:\proyectos c++\tp1\funciones.cpp
+	"funciones.h"
+

@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1473730193 source:d:\proyectos c++\tanque y valvula\tanque\main.cpp
+	"Tanque.h"
+
+1473727729 d:\proyectos c++\tanque y valvula\tanque\tanque.h
+	<iostream>
+	<string>
+	"Valvula.h"
+
+1473730688 d:\proyectos c++\tanque y valvula\tanque\valvula.h
+	<string>
+
+1473729543 source:d:\proyectos c++\tanque y valvula\tanque\tanque.cpp
+	"Tanque.h"
+
+1473727479 source:d:\proyectos c++\tanque y valvula\tanque\valvula.cpp
+	"Valvula.h"
+

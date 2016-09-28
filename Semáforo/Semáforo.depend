@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1474482028 source:d:\noabrir\cac\programacion 2\semáforo\main.cpp
+	<iostream>
+	"Semaforo.h"
+
+1474472751 source:d:\noabrir\cac\programacion 2\semáforo\luz.cpp
+	"Luz.h"
+
+1474477015 d:\noabrir\cac\programacion 2\semáforo\luz.h
+
+1474481578 d:\noabrir\cac\programacion 2\semáforo\semaforo.h
+	"Luz.h"
+	<iostream>
+
+1474482163 source:d:\noabrir\cac\programacion 2\semáforo\semaforo.cpp
+	"Semaforo.h"
+

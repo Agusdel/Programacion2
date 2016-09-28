@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1473144314 source:d:\noabrir\cac\programacion 2\juego dados\dado.cpp
+	"Dado.h"
+
+1473139726 d:\noabrir\cac\programacion 2\juego dados\dado.h
+	<time.h>
+	<windows.h>
+
+1475024534 source:d:\noabrir\cac\programacion 2\juego dados\main.cpp
+	<iostream>
+	"Jugador.h"
+	"Moneda.h"
+
+1473138959 source:d:\noabrir\cac\programacion 2\juego dados\moneda.cpp
+	"Moneda.h"
+
+1473141112 d:\noabrir\cac\programacion 2\juego dados\moneda.h
+	<time.h>
+	<windows.h>
+
+1474505698 d:\noabrir\cac\programacion 2\juego dados\jugador.h
+	"Dado.h"
+	"TablaDeResultados.h"
+
+1475025038 source:d:\noabrir\cac\programacion 2\juego dados\jugador.cpp
+	<iostream>
+	"Jugador.h"
+
+1474505393 d:\noabrir\cac\programacion 2\juego dados\tabladeresultados.h
+
+1474505608 source:d:\noabrir\cac\programacion 2\juego dados\tabladeresultados.cpp
+	"TablaDeResultados.h"
+
