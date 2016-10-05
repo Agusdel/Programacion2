@@ -9,3 +9,13 @@
 
 1475066081 c:\users\pc01\desktop\lista\nodo.h
 
+1475674270 source:c:\users\pc01\desktop\agustin\lista\main.cpp
+	<iostream>
+	"Lista.h"
+
+1475675001 c:\users\pc01\desktop\agustin\lista\lista.h
+	"Nodo.h"
+	<stdexcept>
+
+1475668776 c:\users\pc01\desktop\agustin\lista\nodo.h
+

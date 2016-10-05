@@ -10,29 +10,34 @@ int main()
     lista->agregar(2,1);
     lista->agregar(1);
 
-    for (short i = 1; i <= lista->tamanio();i++){
-        int num = lista->operator[](i);
-        //int num = lista->obtener(i);
+    for (unsigned short i = 1; i <= lista->tamanio();i++){
+        int num = (*lista)[i];
         cout << num << endl;
     }
     cout << endl << endl;
 
     lista->eliminar(2);
-    for (short i = 1; i <= lista->tamanio();i++){
-        //int num = lista[i];
-        int num = lista->obtener(i);
+    for (unsigned short i = 1; i <= lista->tamanio();i++){
+        int num = (*lista)[i];
         cout << num << endl;
     }
     cout << endl << endl;
 
     lista->asignar(15,2);
-    for (short i = 1; i <= lista->tamanio();i++){
-        //int num = lista[i];
-        int num = lista->obtener(i);
+    for (unsigned short i = 1; i <= lista->tamanio();i++){
+        int num = (*lista)[i];
         cout << num << endl;
     }
     cout << endl << endl;
 
+    lista->iniciarCursor();
+
+    while (lista->avanzarCursor()){
+        cout << lista->obtenerCursor() << "  ";
+    }
+
+    cout << endl << endl;
+    cout << *lista << endl;
 
     return 0;
 }
