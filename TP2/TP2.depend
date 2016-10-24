@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1477324550 source:d:\noabrir\cac\programacion 2\tp2\main.cpp
+	<string>
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"Molinete.h"
+	"Huesped.h"
+
+1477323425 d:\noabrir\cac\programacion 2\tp2\molinete.h
+
+1477336860 d:\noabrir\cac\programacion 2\tp2\huesped.h
+	<string>
+
+1477323432 source:d:\noabrir\cac\programacion 2\tp2\molinete.cpp
+	"Molinete.h"
+
