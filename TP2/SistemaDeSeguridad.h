@@ -6,6 +6,8 @@
 #include "Lista.h"
 #include "Huesped.h"
 
+static char* archivoActividad = "actividadHuespedes.txt";
+
 class SistemaDeSeguridad{
 
 private:
@@ -32,16 +34,22 @@ public:
     ~SistemaDeSeguridad();
 
     void ActivarHuesped(Huesped huesped);
-    void DesactivarHuesped(Huesped huesped);
+    void DesactivarHuesped(Huesped huesped); ///PRECONDICIÓN: El huesped no se encuentra dentro del predio.
 
     void ActivarMolineteDeRepuesto(unsigned short num);
     void MolinetesReparados();
 
-    bool IngresaHuesped(Huesped huesped, unsigned short numMolinete);
-    bool SaleHuesped(Huesped huesped, unsigned short numMolinete);
+    bool IngresaHuesped(std::string huella, unsigned short numMolinete);
+    bool SaleHuesped(std::string huella, unsigned short numMolinete);
 
     void ImprimirListaHuespedes();
     void ImprimirInformeActividad();
+
+private:
+
+    void ImprimirEnArchivo(std::string huella, std::string ingresaOSale, bool exitoso);
+
+    bool PerteneceHuespedALista(Lista<Huesped>* lista, std::string huella); //posiciona el cursor de la lista en el elemento.
 
 };
 
