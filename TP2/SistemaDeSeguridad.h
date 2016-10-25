@@ -11,6 +11,7 @@ class SistemaDeSeguridad{
 private:
 
     Lista<Huesped>* listaDeHuespedes;
+    Lista<Huesped>* listaHuespedesAdentro;
 
     Molinete molinete1;
     Molinete molinete2;

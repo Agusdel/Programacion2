@@ -3,6 +3,7 @@
 
 SistemaDeSeguridad::SistemaDeSeguridad(){
     listaDeHuespedes = new Lista<Huesped>();
+    listaHuespedesAdentro = new Lista<Huesped>();
 
     molinete1 = Molinete();
     molinete2 = Molinete();
@@ -19,6 +20,7 @@ SistemaDeSeguridad::SistemaDeSeguridad(){
 
 SistemaDeSeguridad::~SistemaDeSeguridad(){
     delete listaDeHuespedes;
+    delete listaHuespedesAdentro;
 }
 
 void SistemaDeSeguridad::ActivarHuesped(Huesped huesped){
@@ -52,7 +54,8 @@ bool SistemaDeSeguridad::IngresaHuesped(Huesped huesped, unsigned short numMolin
         }
         else { ///CASO DE MOLINETE VALIDO Y EN FUNCIONAMIENTO.
             if (listaDeHuespedes->pertenece(huesped)){  // CASO EL HUESPED PERTENECE A LA LISTA
-
+                listaHuespedesAdentro->agregar(huesped);
+                //hacer
                 ingresoExitoso = true;
             }
             else {                                      // CASO NO PERTENECE
@@ -78,7 +81,7 @@ bool SistemaDeSeguridad::SaleHuesped(Huesped huesped, unsigned short numMolinete
         }
         else { ///CASO DE MOLINETE VALIDO Y EN FUNCIONAMIENTO.
             if (listaDeHuespedes->pertenece(huesped)){  // CASO EL HUESPED PERTENECE A LA LISTA
-
+                // tiene que estar en la lista de huespedes o la de huespedes adentro????? huespedes adentro
                 egresoExitoso = true;
             }
             else {                                      // CASO NO PERTENECE
