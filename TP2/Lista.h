@@ -181,5 +181,8 @@ template<class T>
 T Lista<T>::obtenerCursor(){
     if (this->actual != NULL)
         return this->actual->obtenerElem();
+    else {
+        throw std::invalid_argument("Invalid pointer.");
+    }
 }
 #endif // LISTA_H_INCLUDED

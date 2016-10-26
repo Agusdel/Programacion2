@@ -3,49 +3,73 @@
 #include <cstdlib>
 #include <conio.h>
 
-#include "Molinete.h"
+#include "SistemaDeSeguridad.h"
 #include "Huesped.h"
-
-#define UP 72
-#define LEFT 75
-#define RIGHT 77
-#define ENTER '\r'
 
 using namespace std;
 
 int main()
 {
-    /*Molinete unMolinete;
-    bool continuar = true;
-    cout << "Bienvenido, soy un molinete." << endl << endl;
-    cout << "Dejar pasar ->, Dejar salir <-, Conocer cantidad ^, Salir ENTER" << endl << endl;
-    do
-    {
-        switch(getch())
-        {
-            case UP:
-                cout << "Cantidad de personas adentro: " << unMolinete.contarPersonas() << endl;
-                break;
+    SistemaDeSeguridad sistema;
 
-            case LEFT:
-                if(unMolinete.contarPersonas()>=1){
-                    cout << "Sale persona" << endl;
-                }
-                unMolinete.dejarSalir();
-                break;
+    Huesped huesped1("Juan","pachucho",156435,"huella");
+    Huesped huesped2("Pepe","pachucho",156435,"huella2");
+    Huesped huesped3("Pipo","pachucho",156435,"huella3");
+    Huesped huesped4("Papo","pachucho",156435,"huella4");
 
-            case RIGHT:
-                unMolinete.dejarEntrar();
-                cout << "Entra persona" << endl;
-                break;
+    sistema.ActivarHuesped(huesped1);
+    sistema.ActivarHuesped(huesped2);
+    sistema.ActivarHuesped(huesped3);
+    sistema.ActivarHuesped(huesped4);
+    cout << endl;
 
-            case ENTER:
-                cout << endl << "Fin de mi trabajo. \n\nAtte.- Molinete" << endl;
-                continuar = false;
-                break;
-        }
+    cout << "*****************************" << endl;
+    sistema.ImprimirListaHuespedes();
+    cout << endl;
+    sistema.ImprimirListaHuespedesAdentro();
+    cout << "*****************************" << endl;
 
-    }while(continuar);*/
+    cout << endl;
+    cout << "\nIngresa nadie" << endl;
+    sistema.IngresaHuesped("hasduella",5);
+    cout << "\nIngresa 1" << endl;
+    sistema.IngresaHuesped("huella",5);
+    cout << "\nIngresa 2" << endl;
+    sistema.IngresaHuesped("huella2",2);
+    cout << "\nIngresa nadie" << endl;
+    sistema.IngresaHuesped("huellasdasda2",2);
+    cout << "\nIngresa 2" << endl;
+    sistema.IngresaHuesped("huella2",5);
+
+    cout << "*****************************" << endl;
+    sistema.ImprimirListaHuespedes();
+    cout << endl;
+    sistema.ImprimirListaHuespedesAdentro();
+    cout << "*****************************" << endl;
+
+    cout << "\nSale 1" << endl;
+    sistema.SaleHuesped("huella",2);
+    cout << "\nSale nadie" << endl;
+    sistema.SaleHuesped("huel651a",2);
+    cout << "\nSale 1" << endl;
+    sistema.SaleHuesped("huella",2);
+    cout << "\nIngresa 1" << endl;
+    sistema.IngresaHuesped("huella",5);
+
+    cout << "*****************************" << endl;
+    sistema.ImprimirListaHuespedes();
+    cout << endl;
+    sistema.ImprimirListaHuespedesAdentro();
+    cout << "*****************************" << endl;
+
+    //sistema.ActivarMolineteDeRepuesto(5);
+
+
+    cout << "\nIngresa 2 mol 7" << endl;
+    sistema.IngresaHuesped("huella2",7);
+
+    cout << "\n";
+    sistema.ImprimirInformeActividad();
 
     return 0;
 

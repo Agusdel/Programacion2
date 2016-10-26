@@ -1,0 +1,18 @@
+Ingreso denegado - Huella: hasduella. Hora: 26-10-2016 12:22:58.
+Ingreso - Huesped: pachucho, Juan, 156435. Hora: 26-10-2016 12:22:58.
+Ingreso - Huesped: pachucho, Pepe, 156435. Hora: 26-10-2016 12:22:58.
+Ingreso denegado - Huella: huellasdasda2. Hora: 26-10-2016 12:22:58.
+Ingreso denegado - Huella: huella2. Hora: 26-10-2016 12:22:58.
+Egreso - Huesped: pachucho, Pepe, 156435. Hora: 26-10-2016 12:22:58.
+Egreso denegado - Huella: huel651a. Hora: 26-10-2016 12:22:58.
+Egreso denegado - Huella: huella. Hora: 26-10-2016 12:22:58.
+Ingreso - Huesped: pachucho, Juan, 156435. Hora: 26-10-2016 12:22:58.
+Ingreso denegado - Huella: hasduella. Fecha y hora: 26-10-2016 12:23:51.
+Ingreso - Huesped: pachucho, Juan, 156435. Fecha y hora: 26-10-2016 12:23:51.
+Ingreso - Huesped: pachucho, Pepe, 156435. Fecha y hora: 26-10-2016 12:23:51.
+Ingreso denegado - Huella: huellasdasda2. Fecha y hora: 26-10-2016 12:23:51.
+Ingreso denegado - Huella: huella2. Fecha y hora: 26-10-2016 12:23:51.
+Egreso - Huesped: pachucho, Pepe, 156435. Fecha y hora: 26-10-2016 12:23:51.
+Egreso denegado - Huella: huel651a. Fecha y hora: 26-10-2016 12:23:51.
+Egreso denegado - Huella: huella. Fecha y hora: 26-10-2016 12:23:51.
+Ingreso - Huesped: pachucho, Juan, 156435. Fecha y hora: 26-10-2016 12:23:51.

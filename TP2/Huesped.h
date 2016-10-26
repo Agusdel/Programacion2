@@ -18,10 +18,15 @@ public:
     Huesped(std::string nombre = "", std::string apellido = "", unsigned int dni = 0, std::string huella = "") :
         nombre(nombre), apellido(apellido), dni(dni), huellaDactilar(huella){};
 
+    std::string Nombre(){return nombre;}
+    std::string Apellido(){return apellido;}
+    unsigned int Dni(){return dni;}
+    std::string Huella(){return huellaDactilar;}
+
     bool operator== (Huesped otro){return nombre == otro.nombre && apellido == otro.apellido && dni == otro.dni && huellaDactilar == otro.huellaDactilar;}
 
     friend std::ostream& operator<< (std::ostream &os, const Huesped &huesped){
-        os << "< Huesped: " << huesped.apellido << ", " << huesped.nombre << ", DNI: " << huesped.dni << " >";
+        os << "< Huesped: " << huesped.apellido << ", " << huesped.nombre << ". DNI: " << huesped.dni << " >";
         return os;
     }
 };

@@ -2,6 +2,8 @@
 #define SISTEMADESEGURIDAD_H_INCLUDED
 
 #include <iostream>
+#include <fstream>
+#include <time.h>
 #include "Molinete.h"
 #include "Lista.h"
 #include "Huesped.h"
@@ -24,6 +26,7 @@ private:
     Molinete molineteDeRespuesto;
 
     unsigned int cantidadTotalIngresos;
+    unsigned int cantidadTotalEgresos;
 
     bool hayMolineteRoto;
     unsigned short molineteRoto;
@@ -43,14 +46,16 @@ public:
     bool SaleHuesped(std::string huella, unsigned short numMolinete);
 
     void ImprimirListaHuespedes();
+    void ImprimirListaHuespedesAdentro();
     void ImprimirInformeActividad();
 
 private:
 
     void ImprimirEnArchivo(std::string huella, std::string ingresaOSale, bool exitoso);
 
-    bool PerteneceHuespedALista(Lista<Huesped>* lista, std::string huella); //posiciona el cursor de la lista en el elemento.
+    bool PerteneceHuespedALista(Lista<Huesped>* lista, std::string huella, int &pos); //posiciona el cursor de la lista en el elemento. YA NO
 
+    void ObtenerHora(std::string &hora);
 };
 
 #endif // SISTEMADESEGURIDAD_H_INCLUDED

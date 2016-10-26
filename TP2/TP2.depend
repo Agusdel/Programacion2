@@ -30,3 +30,36 @@
 
 1477364028 d:\noabrir\cac\programacion 2\tp2\nodo.h
 
+1477494951 source:c:\users\pc01\desktop\agustin\tp2\main.cpp
+	<string>
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"SistemaDeSeguridad.h"
+	"Huesped.h"
+
+1477482984 c:\users\pc01\desktop\agustin\tp2\molinete.h
+
+1477487015 c:\users\pc01\desktop\agustin\tp2\huesped.h
+	<string>
+
+1477482984 source:c:\users\pc01\desktop\agustin\tp2\molinete.cpp
+	"Molinete.h"
+
+1477495355 source:c:\users\pc01\desktop\agustin\tp2\sistemadeseguridad.cpp
+	"SistemaDeSeguridad.h"
+
+1477495323 c:\users\pc01\desktop\agustin\tp2\sistemadeseguridad.h
+	<iostream>
+	<fstream>
+	<time.h>
+	"Molinete.h"
+	"Lista.h"
+	"Huesped.h"
+
+1477488395 c:\users\pc01\desktop\agustin\tp2\lista.h
+	"Nodo.h"
+	<stdexcept>
+
+1477482984 c:\users\pc01\desktop\agustin\tp2\nodo.h
+
