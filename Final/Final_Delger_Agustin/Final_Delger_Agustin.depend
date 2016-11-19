@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1479585304 source:d:\noabrir\cac\programacion 2\final\final_delger_agustin\main.cpp
+	<iostream>
+	"Peticion.h"
+	"Servidor.h"
+	"Cliente.h"
+	"Lista.h"
+
+1479581105 d:\noabrir\cac\programacion 2\final\final_delger_agustin\colaprioridad.h
+	"Lista.h"
+
+1479581084 d:\noabrir\cac\programacion 2\final\final_delger_agustin\lista.h
+	"Nodo.h"
+
+1399765742 d:\noabrir\cac\programacion 2\final\final_delger_agustin\nodo.h
+
+1479581615 source:d:\noabrir\cac\programacion 2\final\final_delger_agustin\peticion.cpp
+	"Peticion.h"
+
+1479581580 d:\noabrir\cac\programacion 2\final\final_delger_agustin\peticion.h
+	<iostream>
+
+1479586661 d:\noabrir\cac\programacion 2\final\final_delger_agustin\servidor.h
+	<string>
+	"Cola.h"
+	"ColaPrioridad.h"
+	"Peticion.h"
+	"Cliente.h"
+	"Lista.h"
+
+1479580959 d:\noabrir\cac\programacion 2\final\final_delger_agustin\cola.h
+	"Nodo.h"
+
+1479586643 source:d:\noabrir\cac\programacion 2\final\final_delger_agustin\servidor.cpp
+	"Servidor.h"
+
+1479585587 d:\noabrir\cac\programacion 2\final\final_delger_agustin\cliente.h
+	"Servidor.h"
+	"Peticion.h"
+
+1479585573 source:d:\noabrir\cac\programacion 2\final\final_delger_agustin\cliente.cpp
+	"Cliente.h"
+
