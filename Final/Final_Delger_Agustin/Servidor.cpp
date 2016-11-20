@@ -1,9 +1,5 @@
 #include "Servidor.h"
 
-/*bool Servidor::PunteroCliente::operator==(PunteroCliente otro){
-    return cliente->getID() == otro.cliente->getID();
-}*/
-
 Servidor::Servidor(std::string contrasenia){
     this->contrasenia = contrasenia;
     tiempoPets = 0;

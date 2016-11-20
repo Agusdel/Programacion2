@@ -43,21 +43,11 @@ void Cliente::NotificarPeticionAtendida(PeticionCritica peticion) const{
 }
 
 void Cliente::EnviarPeticion(Peticion peticion){
-    //if (servidorVinculado)
     servidor->EnviarPeticion(*this, peticion);
-    /*else{
-        std::cout << "ERROR: Debe vincular un servidor para poder mandar una peticion." << std::endl << std::endl;
-        throw 0;
-    }*/
 }
 
 void Cliente::EnviarPeticion(PeticionCritica peticion){
-    //if (servidorVinculado)
     servidor->EnviarPeticion(*this, peticion);
-    /*else{
-        std::cout << "ERROR: Debe vincular un servidor para poder mandar una peticion." << std::endl << std::endl;
-        throw 0;
-    }*/
 }
 
 bool Cliente::operator== (Cliente otro){
