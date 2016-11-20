@@ -16,27 +16,19 @@ private:
 
     Servidor* servidor;
 
-    bool servidorVinculado;
-
 public:
 
     Cliente();
 
-    Cliente(Servidor& servidor);
-
-    void Vincularse(const Cliente& c, std::string contrasenia);
-
-    void Desvincularse(const Cliente& c);
-
-    bool Vinculado(const Cliente& c) const;
+    Cliente(Servidor& servidor, std::string contrasenia);
 
     unsigned int getID() const;
 
     Servidor getServidor() const;
 
-    bool ServidorVinculado() const;
+    bool ServidorVinculado();
 
-    void VincularServidor(Servidor& servidor);
+    bool VincularServidor(Servidor& servidor, std::string contrasenia);
 
     void DesvincularServidor();
 
@@ -44,9 +36,9 @@ public:
 
     void NotificarPeticionAtendida(PeticionCritica peticion) const;
 
-    void EnviarPeticion(Peticion peticion) const;
+    void EnviarPeticion(Peticion peticion);
 
-    void EnviarPeticion(PeticionCritica peticion) const;
+    void EnviarPeticion(PeticionCritica peticion);
 
     bool operator== (Cliente otro);
 };

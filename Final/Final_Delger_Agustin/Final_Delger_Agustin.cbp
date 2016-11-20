@@ -32,6 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Cliente.cpp" />
+		<Unit filename="Cliente.h" />
+		<Unit filename="Cola.h" />
+		<Unit filename="ColaPrioridad.h" />
+		<Unit filename="Lista.h" />
+		<Unit filename="Peticion.cpp" />
+		<Unit filename="Peticion.h" />
+		<Unit filename="Servidor.cpp" />
+		<Unit filename="Servidor.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

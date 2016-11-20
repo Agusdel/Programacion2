@@ -1,8 +1,8 @@
 #include "Servidor.h"
 
-bool Servidor::PunteroCliente::operator==(PunteroCliente otro){
+/*bool Servidor::PunteroCliente::operator==(PunteroCliente otro){
     return cliente->getID() == otro.cliente->getID();
-}
+}*/
 
 Servidor::Servidor(std::string contrasenia){
     this->contrasenia = contrasenia;
@@ -10,20 +10,56 @@ Servidor::Servidor(std::string contrasenia){
     tiempoPetsCrits = 0;
 }
 
-void Servidor::EnviarPeticion(const Cliente& c, const Peticion& pet){
-    PetNC p;
-    p.pet = &pet;
-    p.cliente = &c;
-    peticiones.push(p);
-    tiempoPets += pet.getDuracion();
+bool Servidor::CambiarContrasenia(std::string nuevaContrasenia, std::string contraseniaActual){
+    if (contraseniaActual == contrasenia){
+        contrasenia = nuevaContrasenia;
+        return true;
+    }
+    return false;
 }
 
-void Servidor::EnviarPeticion(const Cliente& c, const PeticionCritica& pet){
-    PetC p;
-    p.pet = &pet;
-    p.cliente = &c;
-    peticionesCriticas.push(p,pet.getPrioridad());
-    tiempoPetsCrits += pet.getDuracion();
+bool Servidor::Vincularse(Cliente& c, std::string contrasenia){
+    if (contrasenia == this->contrasenia)
+        clientes.agregar(&c);
+    else
+        std::cout << "\tERROR: Contraseña invalida. No fue posible vincularse al servidor." << std::endl << std::endl;
+    return contrasenia == this->contrasenia;
+}
+
+void Servidor::Desvincularse(Cliente& c){
+    clientes.remover(clientes.esta(&c));
+}
+
+bool Servidor::Vinculado(Cliente& c){
+    return clientes.esta(&c) != 0;
+}
+
+void Servidor::EnviarPeticion(Cliente& c, const Peticion& pet){
+    if (clientes.esta(&c) != 0){
+        PetNC p;
+        p.pet = &pet;
+        p.cliente = &c;
+        peticiones.push(p);
+        tiempoPets += pet.getDuracion();
+    }
+    else{
+        std::cout << "ERROR: Debe vincularse al servidor para poder mandar una peticion." << std::endl << std::endl;
+        throw 0;
+    }
+}
+
+void Servidor::EnviarPeticion(Cliente& c, const PeticionCritica& pet){
+    if (clientes.esta(&c) != 0){
+        PetC p;
+        p.pet = &pet;
+        p.cliente = &c;
+        peticionesCriticas.push(p,pet.getPrioridad());
+        tiempoPetsCrits += pet.getDuracion();
+    }
+    else{
+        std::cout << "ERROR: Debe vincularse al servidor para poder mandar una peticion." << std::endl << std::endl;
+        throw 0;
+    }
 }
 
 void Servidor::PeticionesNoCriticasPorAtender() const{

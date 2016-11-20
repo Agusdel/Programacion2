@@ -24,15 +24,15 @@ private:
         const PeticionCritica* pet;
         const Cliente* cliente;
     };
-
+/*
     struct PunteroCliente{   /// IGUALAR LOS PUNTEROS POSTA POSTA
         Cliente* cliente;
         bool operator== (PunteroCliente otro);
-    };
+    };*/
 
     std::string contrasenia;
 
-    Lista<PunteroCliente> clientes;
+    Lista<Cliente*> clientes;
 
     Cola<PetNC> peticiones;
 
@@ -54,13 +54,21 @@ public:
      * POSTCONDICION: Crea un nuevo servidor con una contraseña, colas vacías y tiempos en 0.
      */
 
-    void EnviarPeticion(const Cliente& c, const Peticion& pet);
+    bool CambiarContrasenia(std::string nuevaContrasenia, std::string contraseniaActual);
+
+    bool Vincularse(Cliente& c, std::string contrasenia);
+
+    void Desvincularse(Cliente& c);
+
+    bool Vinculado(Cliente& c);
+
+    void EnviarPeticion(Cliente& c, const Peticion& pet);
     /* FUNCIÓN: Se recibe una nueva petición.
      * PRECONDICIÓN: true.
      * POSTCONDICION: La petición se agrega última en la cola de peticiones no críticas. Se aumenta el tiempo de peticiones en la duración de esta.
      */
 
-    void EnviarPeticion(const Cliente& c, const PeticionCritica& pet);
+    void EnviarPeticion(Cliente& c, const PeticionCritica& pet);
     /* FUNCIÓN: Se recibe una nueva petición critica.
      * PRECONDICIÓN: true.
      * POSTCONDICION: Se ajusta la prioridad a un numero entre 1 y 10. La petición se agrega en la cola de peticiones no críticas de acuerdo con su prioridad.
