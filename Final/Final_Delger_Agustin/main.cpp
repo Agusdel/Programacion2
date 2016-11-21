@@ -8,6 +8,8 @@ using namespace std;
 
 int main()
 {
+    /// Realizado por Agustín Delger, 38243126.
+
     Servidor s("hola");
 
     Cliente c = Cliente();
